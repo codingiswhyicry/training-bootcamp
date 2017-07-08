@@ -196,20 +196,59 @@
         <scene sceneID="ZdC-y0-EnG">
             <objects>
                 <viewController id="EsG-i4-wbr" customClass="StartViewController" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Dmt-gm-dId">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="00p-5i-pTg"/>
+                        <viewControllerLayoutGuide type="bottom" id="w3Y-P8-LrG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GS6-fa-ZXw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <connections>
-                            <outlet property="delegate" destination="EsG-i4-wbr" id="hH8-Iv-urq"/>
-                        </connections>
-                    </arscnView>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NOc-P4-fcp" userLabel="Holder">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvZ-aQ-gK5">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </arscnView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HH1-5T-eVj">
+                                        <rect key="frame" x="110" y="318" width="154" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="cjN-Ap-4Kb"/>
+                                            <constraint firstAttribute="width" constant="154" id="ykX-Ok-i87"/>
+                                        </constraints>
+                                        <state key="normal" title="Start">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fvZ-aQ-gK5" firstAttribute="leading" secondItem="NOc-P4-fcp" secondAttribute="leading" id="52W-JY-K3Z"/>
+                                    <constraint firstItem="HH1-5T-eVj" firstAttribute="centerY" secondItem="fvZ-aQ-gK5" secondAttribute="centerY" id="NnA-Oq-ndO"/>
+                                    <constraint firstItem="HH1-5T-eVj" firstAttribute="centerY" secondItem="NOc-P4-fcp" secondAttribute="centerY" id="O8W-ym-Jhv"/>
+                                    <constraint firstItem="HH1-5T-eVj" firstAttribute="centerX" secondItem="fvZ-aQ-gK5" secondAttribute="centerX" id="UO5-fz-mpP"/>
+                                    <constraint firstItem="HH1-5T-eVj" firstAttribute="centerX" secondItem="NOc-P4-fcp" secondAttribute="centerX" id="mlH-F9-VvJ"/>
+                                    <constraint firstItem="fvZ-aQ-gK5" firstAttribute="top" secondItem="NOc-P4-fcp" secondAttribute="top" id="sAk-QM-rxj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NOc-P4-fcp" firstAttribute="top" secondItem="GS6-fa-ZXw" secondAttribute="top" id="gce-An-hDg"/>
+                            <constraint firstItem="NOc-P4-fcp" firstAttribute="bottom" secondItem="w3Y-P8-LrG" secondAttribute="top" id="h8x-mQ-h2V"/>
+                            <constraint firstAttribute="trailing" secondItem="NOc-P4-fcp" secondAttribute="trailing" id="kfe-qB-u7f"/>
+                            <constraint firstItem="NOc-P4-fcp" firstAttribute="leading" secondItem="GS6-fa-ZXw" secondAttribute="leading" id="too-ch-gXy"/>
+                        </constraints>
+                    </view>
                     <connections>
-                        <outlet property="sceneView" destination="Dmt-gm-dId" id="8Xh-23-YTU"/>
+                        <outlet property="holder" destination="NOc-P4-fcp" id="WFS-av-TjK"/>
+                        <outlet property="sceneView" destination="fvZ-aQ-gK5" id="I6I-sH-9ay"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahU-YB-37Q" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-276" y="-349"/>
+            <point key="canvasLocation" x="-276" y="-349.47526236881561"/>
         </scene>
     </scenes>
 </document>

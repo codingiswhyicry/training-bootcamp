@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0215FD4D1F1169D4007016F7 /* StartScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 0215FD4C1F1169D4007016F7 /* StartScene.scn */; };
 		027588961F116656008955C6 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027588951F116655008955C6 /* ARKit.framework */; };
 		027588981F11665A008955C6 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027588971F11665A008955C6 /* SceneKit.framework */; };
 		02EFDDA41F115D8A00A5A0DE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFDDA31F115D8A00A5A0DE /* StartViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0215FD4C1F1169D4007016F7 /* StartScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = StartScene.scn; sourceTree = "<group>"; };
 		025BC9F71F1165AD008234B7 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		025BC9F81F1165B4008234B7 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		027588951F116655008955C6 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ARKit.framework; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0215FD4E1F1169DE007016F7 /* SceneKit Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0215FD4C1F1169D4007016F7 /* StartScene.scn */,
+			);
+			name = "SceneKit Scenes";
+			sourceTree = "<group>";
+		};
 		025BC9F61F1165AD008234B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 				9CBAE30D1F11477B007B9112 /* Info.plist */,
 				02EFDDE11F115E6800A5A0DE /* art.scnassets */,
 				9CBAE32F1F114E24007B9112 /* main.storyboard */,
+				0215FD4E1F1169DE007016F7 /* SceneKit Scenes */,
 				9CBAE3011F11477B007B9112 /* AppDelegate.swift */,
 				9CBAE33F1F114F05007B9112 /* view controllers */,
 				9CBAE3401F114F26007B9112 /* other */,
@@ -262,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0215FD4D1F1169D4007016F7 /* StartScene.scn in Resources */,
 				9CBAE3301F114E24007B9112 /* main.storyboard in Resources */,
 				9CBAE3091F11477B007B9112 /* Assets.xcassets in Resources */,
 			);

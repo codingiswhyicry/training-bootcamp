@@ -11,6 +11,7 @@ import ARKit
 import SceneKit
 class StartViewController: UIViewController, ARSCNViewDelegate {
 
+    @IBOutlet var holder: UIView!
     @IBOutlet var sceneView: ARSCNView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +26,12 @@ class StartViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the scene to the view
        // sceneView.scene = scene
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        self.view.addSubview(blurEffectView)
+        self.holder.addSubview(blurEffectView)
         
         // Do any additional setup after loading the view.
     }
