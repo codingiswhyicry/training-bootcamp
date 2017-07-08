@@ -17,6 +17,13 @@
 		9CBAE3391F114ED7007B9112 /* wonder_woman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE3381F114ED7007B9112 /* wonder_woman.swift */; };
 		9CBAE33B1F114EE3007B9112 /* green_lantern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE33A1F114EE3007B9112 /* green_lantern.swift */; };
 		9CBAE33D1F114EEB007B9112 /* superman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE33C1F114EEB007B9112 /* superman.swift */; };
+		9CBAE3421F1153D5007B9112 /* final_score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE3411F1153D5007B9112 /* final_score.swift */; };
+		9CBAE3491F115980007B9112 /* SourceCodePro-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3431F11597F007B9112 /* SourceCodePro-ExtraLight.otf */; };
+		9CBAE34A1F115980007B9112 /* SourceCodePro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3441F11597F007B9112 /* SourceCodePro-BoldIt.otf */; };
+		9CBAE34B1F115980007B9112 /* SourceCodePro-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3451F11597F007B9112 /* SourceCodePro-BlackIt.otf */; };
+		9CBAE34C1F115980007B9112 /* SourceCodePro-ExtraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3461F11597F007B9112 /* SourceCodePro-ExtraLightIt.otf */; };
+		9CBAE34D1F115980007B9112 /* SourceCodePro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3471F11597F007B9112 /* SourceCodePro-It.otf */; };
+		9CBAE34E1F115980007B9112 /* SourceCodePro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3481F11597F007B9112 /* SourceCodePro-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9CBAE2FE1F11477B007B9112 /* training-camp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "training-camp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CBAE2FE1F11477B007B9112 /* training-camp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "training-camp.app"; path = "/Users/amandasouthworth/Desktop/training/training-camp/build/Debug-iphoneos/training-camp.app"; sourceTree = "<absolute>"; };
 		9CBAE3011F11477B007B9112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBAE3031F11477B007B9112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CBAE3081F11477B007B9112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CBAE30D1F11477B007B9112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CBAE3121F11477B007B9112 /* training-campTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "training-campTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CBAE31D1F11477B007B9112 /* training-campUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "training-campUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CBAE3121F11477B007B9112 /* training-campTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "training-campTests.xctest"; path = "/Users/amandasouthworth/Desktop/training/training-camp/build/Debug-iphoneos/training-campTests.xctest"; sourceTree = "<absolute>"; };
+		9CBAE31D1F11477B007B9112 /* training-campUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "training-campUITests.xctest"; path = "/Users/amandasouthworth/Desktop/training/training-camp/build/Debug-iphoneos/training-campUITests.xctest"; sourceTree = "<absolute>"; };
 		9CBAE32F1F114E24007B9112 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		9CBAE3311F114E5C007B9112 /* mainMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMission.swift; sourceTree = "<group>"; };
 		9CBAE3331F114E92007B9112 /* userProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfile.swift; sourceTree = "<group>"; };
@@ -51,6 +58,13 @@
 		9CBAE3381F114ED7007B9112 /* wonder_woman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wonder_woman.swift; sourceTree = "<group>"; };
 		9CBAE33A1F114EE3007B9112 /* green_lantern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = green_lantern.swift; sourceTree = "<group>"; };
 		9CBAE33C1F114EEB007B9112 /* superman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = superman.swift; sourceTree = "<group>"; };
+		9CBAE3411F1153D5007B9112 /* final_score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = final_score.swift; sourceTree = "<group>"; };
+		9CBAE3431F11597F007B9112 /* SourceCodePro-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-ExtraLight.otf"; path = "../../../../hackathon/source-code-pro/SourceCodePro-ExtraLight.otf"; sourceTree = "<group>"; };
+		9CBAE3441F11597F007B9112 /* SourceCodePro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-BoldIt.otf"; path = "../../../../hackathon/source-code-pro/SourceCodePro-BoldIt.otf"; sourceTree = "<group>"; };
+		9CBAE3451F11597F007B9112 /* SourceCodePro-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-BlackIt.otf"; path = "../../../../hackathon/source-code-pro/SourceCodePro-BlackIt.otf"; sourceTree = "<group>"; };
+		9CBAE3461F11597F007B9112 /* SourceCodePro-ExtraLightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-ExtraLightIt.otf"; path = "../../../../hackathon/source-code-pro/SourceCodePro-ExtraLightIt.otf"; sourceTree = "<group>"; };
+		9CBAE3471F11597F007B9112 /* SourceCodePro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-It.otf"; path = "../../../../hackathon/source-code-pro/SourceCodePro-It.otf"; sourceTree = "<group>"; };
+		9CBAE3481F11597F007B9112 /* SourceCodePro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-Bold.otf"; path = "../../../../hackathon/source-code-pro/SourceCodePro-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,18 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				9CBAE3001F11477B007B9112 /* training-camp */,
-				9CBAE2FF1F11477B007B9112 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		9CBAE2FF1F11477B007B9112 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9CBAE2FE1F11477B007B9112 /* training-camp.app */,
-				9CBAE3121F11477B007B9112 /* training-campTests.xctest */,
-				9CBAE31D1F11477B007B9112 /* training-campUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		9CBAE3001F11477B007B9112 /* training-camp */ = {
@@ -111,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				9CBAE3361F114ECA007B9112 /* aquaman.swift */,
+				9CBAE3411F1153D5007B9112 /* final_score.swift */,
 				9CBAE3381F114ED7007B9112 /* wonder_woman.swift */,
 				9CBAE33A1F114EE3007B9112 /* green_lantern.swift */,
 				9CBAE33C1F114EEB007B9112 /* superman.swift */,
@@ -132,6 +136,12 @@
 		9CBAE3401F114F26007B9112 /* other */ = {
 			isa = PBXGroup;
 			children = (
+				9CBAE3451F11597F007B9112 /* SourceCodePro-BlackIt.otf */,
+				9CBAE3481F11597F007B9112 /* SourceCodePro-Bold.otf */,
+				9CBAE3441F11597F007B9112 /* SourceCodePro-BoldIt.otf */,
+				9CBAE3431F11597F007B9112 /* SourceCodePro-ExtraLight.otf */,
+				9CBAE3461F11597F007B9112 /* SourceCodePro-ExtraLightIt.otf */,
+				9CBAE3471F11597F007B9112 /* SourceCodePro-It.otf */,
 				9CBAE30D1F11477B007B9112 /* Info.plist */,
 				9CBAE3081F11477B007B9112 /* Assets.xcassets */,
 			);
@@ -226,7 +236,7 @@
 				Base,
 			);
 			mainGroup = 9CBAE2F51F11477A007B9112;
-			productRefGroup = 9CBAE2FF1F11477B007B9112 /* Products */;
+			productRefGroup = 9CBAE2F51F11477A007B9112;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -242,8 +252,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CBAE34E1F115980007B9112 /* SourceCodePro-Bold.otf in Resources */,
+				9CBAE3491F115980007B9112 /* SourceCodePro-ExtraLight.otf in Resources */,
 				9CBAE3301F114E24007B9112 /* main.storyboard in Resources */,
+				9CBAE34B1F115980007B9112 /* SourceCodePro-BlackIt.otf in Resources */,
 				9CBAE3091F11477B007B9112 /* Assets.xcassets in Resources */,
+				9CBAE34D1F115980007B9112 /* SourceCodePro-It.otf in Resources */,
+				9CBAE34C1F115980007B9112 /* SourceCodePro-ExtraLightIt.otf in Resources */,
+				9CBAE34A1F115980007B9112 /* SourceCodePro-BoldIt.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CBAE33B1F114EE3007B9112 /* green_lantern.swift in Sources */,
+				9CBAE3421F1153D5007B9112 /* final_score.swift in Sources */,
 				9CBAE3341F114E92007B9112 /* userProfile.swift in Sources */,
 				9CBAE3391F114ED7007B9112 /* wonder_woman.swift in Sources */,
 				9CBAE3041F11477B007B9112 /* ViewController.swift in Sources */,
@@ -517,6 +534,7 @@
 				9CBAE3281F11477B007B9112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CBAE3291F11477B007B9112 /* Build configuration list for PBXNativeTarget "training-campTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +543,7 @@
 				9CBAE32B1F11477B007B9112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CBAE32C1F11477B007B9112 /* Build configuration list for PBXNativeTarget "training-campUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +552,7 @@
 				9CBAE32E1F11477B007B9112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
