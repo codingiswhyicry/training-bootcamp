@@ -2,20 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>SourceCodePro-BlackIt.otf</string>
-		<string>SourceCodePro-Bold.otf</string>
-		<string>SourceCodePro-BoldIt.otf</string>
-		<string>SourceCodePro-ExtraLight.otf</string>
-		<string></string>
-	</array>
-	<key>SourceCodePro-ExtraLight.otf</key>
-	<string></string>
-	<key>SourceCodePro-ExtraLightIt.otf</key>
-	<string></string>
+	<key>NSCameraUsageDescription</key>
+	<string>This application will use the camera for Augmented Reality.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>DC Training Camp</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -32,10 +24,22 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>SourceCodePro-ExtraLight.otf</key>
+	<string></string>
+	<key>SourceCodePro-ExtraLightIt.otf</key>
+	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SourceCodePro-BlackIt.otf</string>
+		<string>SourceCodePro-Bold.otf</string>
+		<string>SourceCodePro-BoldIt.otf</string>
+		<string>SourceCodePro-ExtraLight.otf</string>
+		<string></string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -43,8 +47,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
