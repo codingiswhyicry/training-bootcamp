@@ -102,6 +102,7 @@
 		9CBAE3001F11477B007B9112 /* training-camp */ = {
 			isa = PBXGroup;
 			children = (
+				9CBAE30D1F11477B007B9112 /* Info.plist */,
 				9CBAE32F1F114E24007B9112 /* main.storyboard */,
 				9CBAE3011F11477B007B9112 /* AppDelegate.swift */,
 				9CBAE33F1F114F05007B9112 /* view controllers */,
@@ -142,7 +143,6 @@
 				9CBAE3431F11597F007B9112 /* SourceCodePro-ExtraLight.otf */,
 				9CBAE3461F11597F007B9112 /* SourceCodePro-ExtraLightIt.otf */,
 				9CBAE3471F11597F007B9112 /* SourceCodePro-It.otf */,
-				9CBAE30D1F11477B007B9112 /* Info.plist */,
 				9CBAE3081F11477B007B9112 /* Assets.xcassets */,
 			);
 			path = other;

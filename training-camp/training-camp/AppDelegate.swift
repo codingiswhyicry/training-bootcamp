@@ -13,8 +13,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+         let window = self.window!
+        
+        let backgroundView = UIImageView(frame: window.frame)
+        
+        backgroundView.image = UIImage(named: "trainingCamp")
+        
+        window.addSubview(backgroundView)
+        
+        window.backgroundColor = UIColor.clear
         // Override point for customization after application launch.
         return true
     }

@@ -8,12 +8,8 @@
 		<string>SourceCodePro-Bold.otf</string>
 		<string>SourceCodePro-BoldIt.otf</string>
 		<string>SourceCodePro-ExtraLight.otf</string>
-		<string></string>
+		<string>SourceCodePro-ExtraLightIt.otf</string>
 	</array>
-	<key>SourceCodePro-ExtraLight.otf</key>
-	<string></string>
-	<key>SourceCodePro-ExtraLightIt.otf</key>
-	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
