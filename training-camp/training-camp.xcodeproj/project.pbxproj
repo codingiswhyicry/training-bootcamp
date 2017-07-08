@@ -21,7 +21,6 @@
 		9CC1C8CB1F118C8000B09D5F /* data-unifon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CC1C8C91F118C7F00B09D5F /* data-unifon.ttf */; };
 		9CC1C8CC1F118C8000B09D5F /* data-latin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CC1C8CA1F118C8000B09D5F /* data-latin.ttf */; };
 		9CC1C8CF1F119C2400B09D5F /* borderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1C8CE1F119C2400B09D5F /* borderView.swift */; };
-		9CC1C8D11F119C6000B09D5F /* greenBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1C8D01F119C6000B09D5F /* greenBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 		9CC1C8C91F118C7F00B09D5F /* data-unifon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "data-unifon.ttf"; path = "../../../../../Downloads/data_control/data-unifon.ttf"; sourceTree = "<group>"; };
 		9CC1C8CA1F118C8000B09D5F /* data-latin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "data-latin.ttf"; path = "../../../../../Downloads/data_control/data-latin.ttf"; sourceTree = "<group>"; };
 		9CC1C8CE1F119C2400B09D5F /* borderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = borderView.swift; sourceTree = "<group>"; };
-		9CC1C8D01F119C6000B09D5F /* greenBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greenBorder.swift; sourceTree = "<group>"; };
 		9CCE18AD1F11665F0081554B /* training-camp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "training-camp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCE18AE1F11665F0081554B /* training-campTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "training-campTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CCE18AF1F11665F0081554B /* training-campUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "training-campUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,7 +136,6 @@
 			children = (
 				9CC1C8CA1F118C8000B09D5F /* data-latin.ttf */,
 				9CC1C8CE1F119C2400B09D5F /* borderView.swift */,
-				9CC1C8D01F119C6000B09D5F /* greenBorder.swift */,
 				9CC1C8C91F118C7F00B09D5F /* data-unifon.ttf */,
 				9CBAE3081F11477B007B9112 /* Assets.xcassets */,
 			);
@@ -280,7 +277,6 @@
 				9CBAE33B1F114EE3007B9112 /* green_lantern.swift in Sources */,
 				9CBAE3421F1153D5007B9112 /* final_score.swift in Sources */,
 				9CBAE3341F114E92007B9112 /* userProfile.swift in Sources */,
-				9CC1C8D11F119C6000B09D5F /* greenBorder.swift in Sources */,
 				9CBAE3391F114ED7007B9112 /* wonder_woman.swift in Sources */,
 				9CBAE3041F11477B007B9112 /* ViewController.swift in Sources */,
 				9CBAE33D1F114EEB007B9112 /* superman.swift in Sources */,
