@@ -10,12 +10,28 @@ import UIKit
 
 class mainMission: UIViewController {
     
-    //main screen 
+    //main screen
+    
+    func createGradientLayer() {
+        
+        gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        
+        gradientLayer.colors = [UIColor.clear().CGColor, UIColor.yellowColor().CGColor]
+        
+        self.view.layer.addSublayer(gradientLayer)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.clear
+        
+        train.backgroundColor = UIColor(red:0.19, green:0.41, blue:0.54, alpha: 0.3)
+        profile.backgroundColor = UIColor(red:0.19, green:0.41, blue:0.54, alpha: 0.3)
+        clock.backgroundColor = UIColor(red:0.19, green:0.41, blue:0.54, alpha: 0.3)
+        date.backgroundColor = UIColor(red:0.19, green:0.41, blue:0.54, alpha: 0.3)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,15 +39,12 @@ class mainMission: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    var gradientLayer: CAGradientLayer!
+    
+    @IBOutlet weak var train: UIButton!
+    @IBOutlet weak var profile: UIButton!
+    
+    @IBOutlet weak var clock: UILabel!
+    @IBOutlet weak var date: UILabel!
+    
 }

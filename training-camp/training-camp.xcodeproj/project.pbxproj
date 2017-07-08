@@ -10,7 +10,7 @@
 		9CBAE3021F11477B007B9112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE3011F11477B007B9112 /* AppDelegate.swift */; };
 		9CBAE3041F11477B007B9112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE3031F11477B007B9112 /* ViewController.swift */; };
 		9CBAE3091F11477B007B9112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3081F11477B007B9112 /* Assets.xcassets */; };
-		9CBAE3301F114E24007B9112 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE32F1F114E24007B9112 /* main.storyboard */; };
+		9CBAE3301F114E24007B9112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE32F1F114E24007B9112 /* Main.storyboard */; };
 		9CBAE3321F114E5C007B9112 /* mainMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE3311F114E5C007B9112 /* mainMission.swift */; };
 		9CBAE3341F114E92007B9112 /* userProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE3331F114E92007B9112 /* userProfile.swift */; };
 		9CBAE3371F114ECA007B9112 /* aquaman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE3361F114ECA007B9112 /* aquaman.swift */; };
@@ -18,12 +18,10 @@
 		9CBAE33B1F114EE3007B9112 /* green_lantern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE33A1F114EE3007B9112 /* green_lantern.swift */; };
 		9CBAE33D1F114EEB007B9112 /* superman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE33C1F114EEB007B9112 /* superman.swift */; };
 		9CBAE3421F1153D5007B9112 /* final_score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE3411F1153D5007B9112 /* final_score.swift */; };
-		9CBAE3491F115980007B9112 /* SourceCodePro-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3431F11597F007B9112 /* SourceCodePro-ExtraLight.otf */; };
-		9CBAE34A1F115980007B9112 /* SourceCodePro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3441F11597F007B9112 /* SourceCodePro-BoldIt.otf */; };
-		9CBAE34B1F115980007B9112 /* SourceCodePro-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3451F11597F007B9112 /* SourceCodePro-BlackIt.otf */; };
-		9CBAE34C1F115980007B9112 /* SourceCodePro-ExtraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3461F11597F007B9112 /* SourceCodePro-ExtraLightIt.otf */; };
-		9CBAE34D1F115980007B9112 /* SourceCodePro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3471F11597F007B9112 /* SourceCodePro-It.otf */; };
-		9CBAE34E1F115980007B9112 /* SourceCodePro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3481F11597F007B9112 /* SourceCodePro-Bold.otf */; };
+		9CC1C8CB1F118C8000B09D5F /* data-unifon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CC1C8C91F118C7F00B09D5F /* data-unifon.ttf */; };
+		9CC1C8CC1F118C8000B09D5F /* data-latin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CC1C8CA1F118C8000B09D5F /* data-latin.ttf */; };
+		9CC1C8CF1F119C2400B09D5F /* borderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1C8CE1F119C2400B09D5F /* borderView.swift */; };
+		9CC1C8D11F119C6000B09D5F /* greenBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC1C8D01F119C6000B09D5F /* greenBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9CBAE2FE1F11477B007B9112 /* training-camp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "training-camp.app"; path = "/Users/amandasouthworth/Desktop/training/training-camp/build/Debug-iphoneos/training-camp.app"; sourceTree = "<absolute>"; };
 		9CBAE3011F11477B007B9112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBAE3031F11477B007B9112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CBAE3081F11477B007B9112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CBAE30D1F11477B007B9112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CBAE3121F11477B007B9112 /* training-campTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "training-campTests.xctest"; path = "/Users/amandasouthworth/Desktop/training/training-camp/build/Debug-iphoneos/training-campTests.xctest"; sourceTree = "<absolute>"; };
-		9CBAE31D1F11477B007B9112 /* training-campUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "training-campUITests.xctest"; path = "/Users/amandasouthworth/Desktop/training/training-camp/build/Debug-iphoneos/training-campUITests.xctest"; sourceTree = "<absolute>"; };
-		9CBAE32F1F114E24007B9112 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		9CBAE32F1F114E24007B9112 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9CBAE3311F114E5C007B9112 /* mainMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMission.swift; sourceTree = "<group>"; };
 		9CBAE3331F114E92007B9112 /* userProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfile.swift; sourceTree = "<group>"; };
 		9CBAE3361F114ECA007B9112 /* aquaman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aquaman.swift; sourceTree = "<group>"; };
@@ -59,12 +54,13 @@
 		9CBAE33A1F114EE3007B9112 /* green_lantern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = green_lantern.swift; sourceTree = "<group>"; };
 		9CBAE33C1F114EEB007B9112 /* superman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = superman.swift; sourceTree = "<group>"; };
 		9CBAE3411F1153D5007B9112 /* final_score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = final_score.swift; sourceTree = "<group>"; };
-		9CBAE3431F11597F007B9112 /* SourceCodePro-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-ExtraLight.otf"; path = "../../../../hackathon/source-code-pro/SourceCodePro-ExtraLight.otf"; sourceTree = "<group>"; };
-		9CBAE3441F11597F007B9112 /* SourceCodePro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-BoldIt.otf"; path = "../../../../hackathon/source-code-pro/SourceCodePro-BoldIt.otf"; sourceTree = "<group>"; };
-		9CBAE3451F11597F007B9112 /* SourceCodePro-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-BlackIt.otf"; path = "../../../../hackathon/source-code-pro/SourceCodePro-BlackIt.otf"; sourceTree = "<group>"; };
-		9CBAE3461F11597F007B9112 /* SourceCodePro-ExtraLightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-ExtraLightIt.otf"; path = "../../../../hackathon/source-code-pro/SourceCodePro-ExtraLightIt.otf"; sourceTree = "<group>"; };
-		9CBAE3471F11597F007B9112 /* SourceCodePro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-It.otf"; path = "../../../../hackathon/source-code-pro/SourceCodePro-It.otf"; sourceTree = "<group>"; };
-		9CBAE3481F11597F007B9112 /* SourceCodePro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceCodePro-Bold.otf"; path = "../../../../hackathon/source-code-pro/SourceCodePro-Bold.otf"; sourceTree = "<group>"; };
+		9CC1C8C91F118C7F00B09D5F /* data-unifon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "data-unifon.ttf"; path = "../../../../../Downloads/data_control/data-unifon.ttf"; sourceTree = "<group>"; };
+		9CC1C8CA1F118C8000B09D5F /* data-latin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "data-latin.ttf"; path = "../../../../../Downloads/data_control/data-latin.ttf"; sourceTree = "<group>"; };
+		9CC1C8CE1F119C2400B09D5F /* borderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = borderView.swift; sourceTree = "<group>"; };
+		9CC1C8D01F119C6000B09D5F /* greenBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greenBorder.swift; sourceTree = "<group>"; };
+		9CCE18AD1F11665F0081554B /* training-camp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "training-camp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCE18AE1F11665F0081554B /* training-campTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "training-campTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CCE18AF1F11665F0081554B /* training-campUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "training-campUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				9CBAE3001F11477B007B9112 /* training-camp */,
+				9CCE18AD1F11665F0081554B /* training-camp.app */,
+				9CCE18AE1F11665F0081554B /* training-campTests.xctest */,
+				9CCE18AF1F11665F0081554B /* training-campUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				9CBAE30D1F11477B007B9112 /* Info.plist */,
-				9CBAE32F1F114E24007B9112 /* main.storyboard */,
+				9CBAE32F1F114E24007B9112 /* Main.storyboard */,
 				9CBAE3011F11477B007B9112 /* AppDelegate.swift */,
 				9CBAE33F1F114F05007B9112 /* view controllers */,
 				9CBAE3401F114F26007B9112 /* other */,
@@ -137,12 +136,10 @@
 		9CBAE3401F114F26007B9112 /* other */ = {
 			isa = PBXGroup;
 			children = (
-				9CBAE3451F11597F007B9112 /* SourceCodePro-BlackIt.otf */,
-				9CBAE3481F11597F007B9112 /* SourceCodePro-Bold.otf */,
-				9CBAE3441F11597F007B9112 /* SourceCodePro-BoldIt.otf */,
-				9CBAE3431F11597F007B9112 /* SourceCodePro-ExtraLight.otf */,
-				9CBAE3461F11597F007B9112 /* SourceCodePro-ExtraLightIt.otf */,
-				9CBAE3471F11597F007B9112 /* SourceCodePro-It.otf */,
+				9CC1C8CA1F118C8000B09D5F /* data-latin.ttf */,
+				9CC1C8CE1F119C2400B09D5F /* borderView.swift */,
+				9CC1C8D01F119C6000B09D5F /* greenBorder.swift */,
+				9CC1C8C91F118C7F00B09D5F /* data-unifon.ttf */,
 				9CBAE3081F11477B007B9112 /* Assets.xcassets */,
 			);
 			path = other;
@@ -165,7 +162,7 @@
 			);
 			name = "training-camp";
 			productName = "training-camp";
-			productReference = 9CBAE2FE1F11477B007B9112 /* training-camp.app */;
+			productReference = 9CCE18AD1F11665F0081554B /* training-camp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9CBAE3111F11477B007B9112 /* training-campTests */ = {
@@ -183,7 +180,7 @@
 			);
 			name = "training-campTests";
 			productName = "training-campTests";
-			productReference = 9CBAE3121F11477B007B9112 /* training-campTests.xctest */;
+			productReference = 9CCE18AE1F11665F0081554B /* training-campTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		9CBAE31C1F11477B007B9112 /* training-campUITests */ = {
@@ -201,7 +198,7 @@
 			);
 			name = "training-campUITests";
 			productName = "training-campUITests";
-			productReference = 9CBAE31D1F11477B007B9112 /* training-campUITests.xctest */;
+			productReference = 9CCE18AF1F11665F0081554B /* training-campUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -252,14 +249,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CBAE34E1F115980007B9112 /* SourceCodePro-Bold.otf in Resources */,
-				9CBAE3491F115980007B9112 /* SourceCodePro-ExtraLight.otf in Resources */,
-				9CBAE3301F114E24007B9112 /* main.storyboard in Resources */,
-				9CBAE34B1F115980007B9112 /* SourceCodePro-BlackIt.otf in Resources */,
+				9CBAE3301F114E24007B9112 /* Main.storyboard in Resources */,
+				9CC1C8CC1F118C8000B09D5F /* data-latin.ttf in Resources */,
+				9CC1C8CB1F118C8000B09D5F /* data-unifon.ttf in Resources */,
 				9CBAE3091F11477B007B9112 /* Assets.xcassets in Resources */,
-				9CBAE34D1F115980007B9112 /* SourceCodePro-It.otf in Resources */,
-				9CBAE34C1F115980007B9112 /* SourceCodePro-ExtraLightIt.otf in Resources */,
-				9CBAE34A1F115980007B9112 /* SourceCodePro-BoldIt.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +280,13 @@
 				9CBAE33B1F114EE3007B9112 /* green_lantern.swift in Sources */,
 				9CBAE3421F1153D5007B9112 /* final_score.swift in Sources */,
 				9CBAE3341F114E92007B9112 /* userProfile.swift in Sources */,
+				9CC1C8D11F119C6000B09D5F /* greenBorder.swift in Sources */,
 				9CBAE3391F114ED7007B9112 /* wonder_woman.swift in Sources */,
 				9CBAE3041F11477B007B9112 /* ViewController.swift in Sources */,
 				9CBAE33D1F114EEB007B9112 /* superman.swift in Sources */,
 				9CBAE3321F114E5C007B9112 /* mainMission.swift in Sources */,
 				9CBAE3371F114ECA007B9112 /* aquaman.swift in Sources */,
+				9CC1C8CF1F119C2400B09D5F /* borderView.swift in Sources */,
 				9CBAE3021F11477B007B9112 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

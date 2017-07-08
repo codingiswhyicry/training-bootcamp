@@ -4,14 +4,15 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SourceCodePro-BlackIt.otf</string>
-		<string>SourceCodePro-Bold.otf</string>
-		<string>SourceCodePro-BoldIt.otf</string>
-		<string>SourceCodePro-ExtraLight.otf</string>
-		<string>SourceCodePro-ExtraLightIt.otf</string>
+		<string>data-latin.ttf</string>
+		<string>data-unifon.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Training Camp uses your Camera to take your photo for your camp profile </string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Training Camp uses your Library to take your photo for your camp profile </string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

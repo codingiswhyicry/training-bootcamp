@@ -9,27 +9,37 @@
 import UIKit
 
 class userProfile: UIViewController {
-
+    
+    
+    //initial launch screen + scan in
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+     self.view.backgroundColor = UIColor.clear
+        
+        
+     backing.layer.cornerRadius = 3
+     backing.clipsToBounds = true
+        
+     backing2.layer.cornerRadius = 3
+     backing2.clipsToBounds = true
+        
+     backing3.layer.cornerRadius = 3
+     backing3.clipsToBounds = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    @IBOutlet weak var rankingHeader: UILabel!
+    @IBOutlet weak var rankingLabel: UILabel!
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    @IBOutlet weak var nameHeader: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var achievementHeader: UILabel!
+    @IBOutlet weak var achievementLabel: UILabel!
+    
+    @IBOutlet weak var backing: UIView!
+    @IBOutlet weak var backing2: UIView!
+    @IBOutlet weak var backing3: UIView!
+    
 }
