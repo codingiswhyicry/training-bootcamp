@@ -3,20 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>NSCameraUsageDescription</key>
-	<string>This application will use the camera for Augmented Reality.</string>
+	<string>Training Camp uses your Camera to take your photo for your camp profile </string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
 	<string>DC Training Camp</string>
 	<key>UIAppFonts</key>
 	<array>
-		<string>data-latin.ttf</string>
-		<string>data-unifon.ttf</string>
+		<string>SourceCodePro-BlackIt.otf</string>
+		<string>SourceCodePro-Bold.otf</string>
+		<string>SourceCodePro-BoldIt.otf</string>
+		<string>SourceCodePro-ExtraLight.otf</string>
+		<string></string>
 	</array>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Training Camp uses your Camera to take your photo for your camp profile </string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Training Camp uses your Library to take your photo for your camp profile </string>
 	<key>CFBundleExecutable</key>
@@ -39,18 +38,10 @@
 	<string></string>
 	<key>SourceCodePro-ExtraLightIt.otf</key>
 	<string></string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>SourceCodePro-BlackIt.otf</string>
-		<string>SourceCodePro-Bold.otf</string>
-		<string>SourceCodePro-BoldIt.otf</string>
-		<string>SourceCodePro-ExtraLight.otf</string>
-		<string></string>
-	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>main</string>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
