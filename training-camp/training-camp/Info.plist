@@ -21,9 +21,6 @@
 	<string>Training Camp uses your Camera to take your photo for your camp profile </string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Training Camp uses your Library to take your photo for your camp profile </string>
-<<<<<<< HEAD:training-camp/training-camp/Info.plist
->>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7:training-camp/training-camp/Info.plist
-=======
 >>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7:training-camp/training-camp/Info.plist
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
