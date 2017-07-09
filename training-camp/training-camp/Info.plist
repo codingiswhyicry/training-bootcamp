@@ -2,14 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-<<<<<<< HEAD:training-camp/training-camp/Info.plist
-	<key>NSCameraUsageDescription</key>
-	<string>This application will use the camera for Augmented Reality.</string>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>CFBundleDisplayName</key>
-	<string>DC Training Camp</string>
-=======
 	<key>UIAppFonts</key>
 	<array>
 		<string>data-latin.ttf</string>
@@ -21,10 +13,6 @@
 	<string>Training Camp uses your Camera to take your photo for your camp profile </string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Training Camp uses your Library to take your photo for your camp profile </string>
-<<<<<<< HEAD:training-camp/training-camp/Info.plist
->>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7:training-camp/training-camp/Info.plist
-=======
->>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7:training-camp/training-camp/Info.plist
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -41,22 +29,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>SourceCodePro-ExtraLight.otf</key>
-	<string></string>
-	<key>SourceCodePro-ExtraLightIt.otf</key>
-	<string></string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>SourceCodePro-BlackIt.otf</string>
-		<string>SourceCodePro-Bold.otf</string>
-		<string>SourceCodePro-BoldIt.otf</string>
-		<string>SourceCodePro-ExtraLight.otf</string>
-		<string></string>
-	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>main</string>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -64,6 +40,8 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
