@@ -10,6 +10,15 @@ import UIKit
 
 class userProfile: UIViewController {
     
+    func createGradientLayer(view: UIView) {
+        
+        gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        
+        gradientLayer.colors = [UIColor.clear.cgColor,  UIColor(red:0.19, green:0.41, blue:0.54, alpha: 0.5).cgColor]
+        
+        view.layer.addSublayer(gradientLayer)
+    }
     
     //initial launch screen + scan in
     
@@ -18,16 +27,23 @@ class userProfile: UIViewController {
         
      self.view.backgroundColor = UIColor.clear
         
-        
      backing.layer.cornerRadius = 3
      backing.clipsToBounds = true
+     createGradientLayer(view: backing)
         
      backing2.layer.cornerRadius = 3
      backing2.clipsToBounds = true
+     createGradientLayer(view: backing2)
         
      backing3.layer.cornerRadius = 3
      backing3.clipsToBounds = true
+     createGradientLayer(view: backing3)
+        
     }
+    
+    @IBOutlet weak var backButton: UIButton!
+    
+    var gradientLayer: CAGradientLayer!
 
     @IBOutlet weak var rankingHeader: UILabel!
     @IBOutlet weak var rankingLabel: UILabel!

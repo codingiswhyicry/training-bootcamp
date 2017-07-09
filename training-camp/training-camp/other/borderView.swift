@@ -14,7 +14,6 @@ class borderView: UIView {
         
         backgroundColor = UIColor.clear
         layer.borderWidth = 2
-        layer.borderColor = UIColor(red:0.41, green:0.41, blue:0.41, alpha:1.0).cgColor
-    
+        layer.borderColor = UIColor(red:0.20, green:0.20, blue:0.20, alpha:1.0).cgColor
     }
 }
