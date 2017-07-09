@@ -1,0 +1,79 @@
+
+Ranking algorithm: 
+
+-5 levels of difficulty
+- different point schemes and spawning for difficulty 
+
+Level 1: 
+	+10 points
+Level 2: 
+	+20 points
+Level 3: 
+	+30 points
+Level 4: 
+	+40 points
+Level 5: 
+	+50 points
+ 
+Level of difficulty depends on user level 
+
+Ranking: 
+
+	Level 1:  10 points
+	Level 2:  50 points 
+	Level 3:  100 points
+	Level 4:  150 points
+	Level 5:  200 points
+	Level 6:  250 points
+	Level 7:  300 points
+	Level 8:  500 points
+	Level 9:  700 points
+	Level 10: 1000 points
+
+NSUserDefaults: 
+
+	Superhero name 
+	Ranking
+	Profile Picture
+
+Hacking Algorithm (Green Lantern): 
+
+	level 1: Deadshot has a list of Targets on his computer to hurt in future missions. Headquaters has connected you with his computer. Find the file “targets.txt” and delete it within 2 minutes, or risk being caught!
+
+	+10 points
+
+	level 2: Batman is on his way to save a citizen, but he can’t remember his exact location! Find and share the coordinates.rtf file with Batman within 3 minutes, or risk being caught! 
+
+	+20 points
+
+	level 3: the Joker has a file of nuclear code on his computer. Connect to his computer from headquarters, and delete the file. 
+
+	+30 points
+
+	level 4: Doctor Poison has finally found the most dangerous chemical compound, and has just sent it to a list of villains within the Gotham area. She has hidden the file of those who she sent to, find the file and delete it before she returns to her computer in 1 minute!
+
+	+40 points
+
+	level 5: Lex Luthor is hosting a party in Gotham. He sent a list of chemicals to his chefs to be put into the food. Find the file with the head chef’s name, hack into her computer, and replace the names of chemicals with vegetables. 
+
+
+	+50 points
+
+Aquaman Algorithm: 
+
+Flying Trash / Fish 
+	-select the trash to pick it up, not the fish
+	-more trash and faster speed with increasing level of difficulty 
+
+Wonderwoman: 
+
+	Gender-bias 
+
+Superman: Bullying (confrontation training)
+	
+	Talk citizens / villains out of doing crimes, murder, or committing suicide 
+
+	Text-to-speech: 
+
+
+

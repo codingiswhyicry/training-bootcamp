@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eN3-rt-Ifh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceCodePro-Regular.otf">
+            <string>SourceCodePro-Regular</string>
+        </array>
+        <array key="gotham-condensed.otf">
+            <string>GothamCondensed-ExtraBlackItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="aNm-ex-iRd">
+            <objects>
+                <viewController id="6Qg-Z6-I6U" customClass="StartViewController" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b9e-tb-cu3"/>
+                        <viewControllerLayoutGuide type="bottom" id="BVR-za-Q1m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JEA-Or-1J0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3hl-bf-Z4n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="arinstructions" destination="sMo-zc-UdE" id="Rgi-Vm-K4s"/>
+                        <outlet property="cyborgImg" destination="KgQ-cT-W42" id="JtH-JG-Xar"/>
+                        <outlet property="cyborgText" destination="sFQ-iD-Lmc" id="LcC-Ab-tCa"/>
+                        <outlet property="holder" destination="Wz2-0w-S1g" id="l3y-OM-0KW"/>
+                        <outlet property="nextButton" destination="cIj-pJ-Dxh" id="Rma-fg-JyY"/>
+                        <outlet property="sceneView" destination="3hl-bf-Z4n" id="bnv-Ic-vzW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AK5-wa-omW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Wz2-0w-S1g">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CyborgTalk" translatesAutoresizingMaskIntoConstraints="NO" id="KgQ-cT-W42">
+                            <rect key="frame" x="180" y="456" width="195" height="215"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Cyborg1" translatesAutoresizingMaskIntoConstraints="NO" id="sFQ-iD-Lmc">
+                            <rect key="frame" x="7" y="456" width="182" height="109"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIj-pJ-Dxh">
+                            <rect key="frame" x="112" y="250" width="150" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="next"/>
+                            <connections>
+                                <action selector="Next:" destination="6Qg-Z6-I6U" eventType="touchUpInside" id="IRm-Mt-mzN"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CyborgARInstructions" translatesAutoresizingMaskIntoConstraints="NO" id="sMo-zc-UdE">
+                            <rect key="frame" x="16" y="264" width="343" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="668" y="-1039"/>
+        </scene>
+        <!--Fingerprint Scanner-->
+        <scene sceneID="WGg-Jp-nyr">
+            <objects>
+                <viewController id="eN3-rt-Ifh" customClass="fingerprintScanner" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5mJ-SG-dZV"/>
+                        <viewControllerLayoutGuide type="bottom" id="4MN-2G-tql"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R51-jt-3BZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="08y-nm-v8V">
+                                <rect key="frame" x="107" y="219" width="161" height="229"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fingerprint" translatesAutoresizingMaskIntoConstraints="NO" id="HdF-AP-6U7">
+                                        <rect key="frame" x="30" y="30" width="101" height="168"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="fingerprint" destination="HdF-AP-6U7" id="17b-ln-2fV"/>
+                        <outlet property="scanner" destination="08y-nm-v8V" id="Zgy-6b-Tur"/>
+                        <segue destination="7zo-4a-Mgq" kind="showDetail" identifier="toFingerScanner" id="UOF-yA-Ioj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7I-ms-UWx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-175.5" y="-366.5"/>
+        </scene>
+        <!--Main Mission-->
+        <scene sceneID="gQo-8Q-fHM">
+            <objects>
+                <viewController id="7zo-4a-Mgq" customClass="mainMission" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cmb-b8-uma"/>
+                        <viewControllerLayoutGuide type="bottom" id="dom-vW-5kC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e9W-hj-0I0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQl-Km-mbD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yNa-fV-NMj" customClass="borderView" customModule="training_camp" customModuleProvider="target">
+                                <rect key="frame" x="232" y="469" width="143" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erJ-QJ-8Ib">
+                                <rect key="frame" x="232" y="469" width="143" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="33"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="PROFILE">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tHt-Cv-eFh" kind="showDetail" identifier="toProfile" id="7Uq-Qe-mDB"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2Q-7B-oiX" customClass="borderView" customModule="training_camp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="574" width="375" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mqf-8c-bwf">
+                                        <rect key="frame" x="15" y="0.0" width="345" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KDH-ns-MPn" customClass="borderView" customModule="training_camp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="469" width="224" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kI9-6n-A3i">
+                                <rect key="frame" x="0.0" y="469" width="224" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="33"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="TRAIN">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="trainAction:" destination="7zo-4a-Mgq" eventType="touchUpInside" id="IVA-kJ-P8t"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backing" destination="yNa-fV-NMj" id="yuj-dt-78c"/>
+                        <outlet property="backing3" destination="R2Q-7B-oiX" id="5gC-d0-5Zg"/>
+                        <outlet property="backing4" destination="KDH-ns-MPn" id="1ZH-y2-IFV"/>
+                        <outlet property="clock" destination="Mqf-8c-bwf" id="bi6-oM-MRR"/>
+                        <outlet property="profile" destination="erJ-QJ-8Ib" id="uiB-1F-xhh"/>
+                        <outlet property="sceneView" destination="jQl-Km-mbD" id="i9j-0K-qBs"/>
+                        <outlet property="train" destination="kI9-6n-A3i" id="xfo-8i-vHl"/>
+                        <segue destination="8fi-hc-BDd" kind="showDetail" identifier="toAquaman" id="XOl-yf-BRE"/>
+                        <segue destination="0Me-cd-sqw" kind="showDetail" identifier="toWonderWoman" id="tQb-nK-qdC"/>
+                        <segue destination="UZM-jZ-ys6" kind="showDetail" identifier="toCyborg" id="0bx-9n-ZGI"/>
+                        <segue destination="cAw-gJ-XNI" kind="show" identifier="toSuperman" id="ySA-4u-9rJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6L2-cg-Cys" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="-364.7676161919041"/>
+        </scene>
+        <!--Wonder woman-->
+        <scene sceneID="wQT-ZZ-OEi">
+            <objects>
+                <viewController id="0Me-cd-sqw" customClass="wonder_woman" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z9U-80-cI5"/>
+                        <viewControllerLayoutGuide type="bottom" id="IwT-UY-JF5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NEz-v4-mzv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="2pP-ej-qWS" kind="show" identifier="toScore" id="Jsa-1X-eAT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xM9-YJ-idi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1520" y="-104"/>
+        </scene>
+        <!--Final score-->
+        <scene sceneID="WOQ-sF-A1J">
+            <objects>
+                <viewController id="2pP-ej-qWS" customClass="final_score" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gld-Ab-aMV"/>
+                        <viewControllerLayoutGuide type="bottom" id="hrT-JH-aCT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h5z-bJ-AQD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M7u-1R-WqW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oDG-CS-1Sp" customClass="borderView" customModule="training_camp" customModuleProvider="target">
+                                <rect key="frame" x="15.5" y="162.5" width="169.5" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Li4-iL-q8d">
+                                        <rect key="frame" x="7" y="8" width="154.5" height="243"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="50"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.41176470590000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agL-7u-42n" customClass="borderView" customModule="training_camp" customModuleProvider="target">
+                                <rect key="frame" x="193.5" y="299" width="165.5" height="123.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="current ranking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEC-ks-BUR">
+                                        <rect key="frame" x="0.0" y="0.0" width="138.5" height="49.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftd-qc-ai7">
+                                        <rect key="frame" x="7.5" y="57.5" width="154" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.41176470590000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J5t-Qd-koq" customClass="borderView" customModule="training_camp" customModuleProvider="target">
+                                <rect key="frame" x="193.5" y="162.5" width="165.5" height="127.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QR6-kQ-ESm">
+                                        <rect key="frame" x="7.5" y="58.5" width="150" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="25"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="current points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wew-YY-Lxv">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="2" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.41176470590000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2z5-hb-UnG">
+                                <rect key="frame" x="15.5" y="443" width="343.5" height="62.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="25"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="return home">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backing" destination="oDG-CS-1Sp" id="D7G-re-yCx"/>
+                        <outlet property="backing2" destination="agL-7u-42n" id="Bd6-eZ-xXX"/>
+                        <outlet property="backing3" destination="J5t-Qd-koq" id="W4Q-Uf-wPG"/>
+                        <outlet property="currentRanking" destination="Ftd-qc-ai7" id="PDy-QN-66y"/>
+                        <outlet property="pointsHeader" destination="wew-YY-Lxv" id="65t-I1-8NJ"/>
+                        <outlet property="pointsLabel" destination="Li4-iL-q8d" id="26X-cY-1uG"/>
+                        <outlet property="rankingHeader" destination="jEC-ks-BUR" id="tIt-Jw-Xnk"/>
+                        <outlet property="rankingLabel" destination="QR6-kQ-ESm" id="3WT-ew-0Hm"/>
+                        <outlet property="returnButton" destination="2z5-hb-UnG" id="4wu-iO-U7q"/>
+                        <outlet property="sceneKit" destination="M7u-1R-WqW" id="XOK-EX-Fj5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2r-9j-H9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2856.8000000000002" y="-338.68065967016497"/>
+        </scene>
+        <!--Aquaman-->
+        <scene sceneID="z0s-wC-SsT">
+            <objects>
+                <viewController id="8fi-hc-BDd" customClass="aquaman" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WVP-4i-Sn8"/>
+                        <viewControllerLayoutGuide type="bottom" id="4YA-ZY-bNo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uUP-Ra-DJk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="2pP-ej-qWS" kind="showDetail" identifier="toScore" id="y9C-Ry-x2w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JxM-yL-pMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515" y="-782"/>
+        </scene>
+        <!--User Profile-->
+        <scene sceneID="6Vf-Dn-Yvq">
+            <objects>
+                <viewController id="tHt-Cv-eFh" customClass="userProfile" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ugI-ry-ZLS"/>
+                        <viewControllerLayoutGuide type="bottom" id="bV8-nH-Wei"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Px5-YW-DPC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLV-eJ-V2Q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTO-hg-hcu" customClass="borderView" customModule="training_camp" customModuleProvider="target">
+                                <rect key="frame" x="169.5" y="126" width="189.5" height="159.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJl-wk-nVB">
+                                        <rect key="frame" x="0.0" y="47" width="190" height="105"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWa-Hq-O5l">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Jp-2Q-GnO" customClass="borderView" customModule="training_camp" customModuleProvider="target">
+                                <rect key="frame" x="15.5" y="293.5" width="343.5" height="227.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASf-za-AFA">
+                                        <rect key="frame" x="8" y="64" width="327" height="147"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <string key="text">+ 10 points: confrontation
++ 10 points: Bias</string>
+                                        <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="achievements" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIt-eg-71h">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svT-Nn-e8j">
+                                <rect key="frame" x="312.5" y="19.5" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="40"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7zo-4a-Mgq" kind="showDetail" identifier="goHome" id="Kgs-sg-j94"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gM8-RG-4h4" customClass="borderView" customModule="training_camp" customModuleProvider="target">
+                                <rect key="frame" x="15.5" y="126" width="146" height="159.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmg-tK-URd">
+                                        <rect key="frame" x="4" y="45" width="138" height="107"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ranking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0z-D2-WSs">
+                                        <rect key="frame" x="0.0" y="0.0" width="97" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="GothamCondensed-ExtraBlackItalic" family="Gotham Condensed" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="achievementHeader" destination="JIt-eg-71h" id="ryY-rg-BoW"/>
+                        <outlet property="achievementLabel" destination="ASf-za-AFA" id="ZH3-q2-yeL"/>
+                        <outlet property="backButton" destination="svT-Nn-e8j" id="4VL-mA-VdD"/>
+                        <outlet property="backing" destination="HTO-hg-hcu" id="dta-Pb-JYT"/>
+                        <outlet property="backing2" destination="2Jp-2Q-GnO" id="zpY-Dl-uQA"/>
+                        <outlet property="backing3" destination="gM8-RG-4h4" id="y4h-a6-VKf"/>
+                        <outlet property="nameHeader" destination="aWa-Hq-O5l" id="6ew-Gp-xeW"/>
+                        <outlet property="nameLabel" destination="qJl-wk-nVB" id="To2-dH-oWJ"/>
+                        <outlet property="rankingHeader" destination="g0z-D2-WSs" id="r9H-yb-C6z"/>
+                        <outlet property="rankingLabel" destination="kmg-tK-URd" id="dye-lY-b7d"/>
+                        <outlet property="sceneView" destination="uLV-eJ-V2Q" id="6Fb-53-awZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61Q-11-upa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="369.26536731634184"/>
+        </scene>
+        <!--Green lantern-->
+        <scene sceneID="Op5-R2-rt8">
+            <objects>
+                <viewController id="UZM-jZ-ys6" customClass="green_lantern" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ohT-QC-cPS"/>
+                        <viewControllerLayoutGuide type="bottom" id="ifN-CP-4uM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sAo-sY-SXN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kN4-x3-2bU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DWi-3B-vu6">
+                                <rect key="frame" x="16" y="20" width="342.5" height="386"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="iPhone-$:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LwG-tM-uan">
+                                        <rect key="frame" x="0.0" y="4" width="342.5" height="308"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.43507620479999998" green="0.72176395940000004" blue="0.39842333880000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="SourceCodePro-Regular" family="Source Code Pro" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rUc-4Q-cB5">
+                                        <rect key="frame" x="0.0" y="318.5" width="342.5" height="62.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="type your commands here" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ZsL-XF-Cgb">
+                                                <rect key="frame" x="14" y="3.5" width="313" height="52.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" red="0.43507620479999998" green="0.72176395940000004" blue="0.39842333880000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="SourceCodePro-Regular" family="Source Code Pro" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backText" destination="DWi-3B-vu6" id="GzS-21-dKe"/>
+                        <outlet property="sceneView" destination="kN4-x3-2bU" id="oE2-m2-prA"/>
+                        <outlet property="textField" destination="ZsL-XF-Cgb" id="cLF-YX-8Cj"/>
+                        <outlet property="textView" destination="LwG-tM-uan" id="Jqg-ai-B5m"/>
+                        <segue destination="2pP-ej-qWS" kind="show" identifier="toScore" id="Pq0-6p-iw8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ibz-o7-6fM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514.4000000000001" y="570.76461769115451"/>
+        </scene>
+        <!--Superman-->
+        <scene sceneID="8Rw-L4-MP9">
+            <objects>
+                <viewController id="cAw-gJ-XNI" customClass="superman" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hxx-VC-2KG"/>
+                        <viewControllerLayoutGuide type="bottom" id="hH4-gc-3Mb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KXo-KZ-0Cf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="2pP-ej-qWS" kind="show" identifier="toScore" id="mgb-tU-fFU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pYb-1f-NlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1515" y="1255"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Cyborg1" width="240" height="144"/>
+        <image name="CyborgARInstructions" width="586" height="56"/>
+        <image name="CyborgTalk" width="337" height="370"/>
+        <image name="fingerprint" width="1000" height="1388"/>
+        <image name="next" width="150" height="60"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="UOF-yA-Ioj"/>
+        <segue reference="y9C-Ry-x2w"/>
+    </inferredMetricsTieBreakers>
+</document>
