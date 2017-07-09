@@ -12,24 +12,26 @@ class final_score: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        defaults.integer(forKey: "points")
+        defaults.integer(forKey: "ranking")
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    var defaults = UserDefaults.standard
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    var level: Int = 0
+    
+    @IBOutlet weak var backing: UIView!
+    @IBOutlet weak var pointsLabel: UILabel!
+    
+    @IBOutlet weak var backing2: UIView!
+    @IBOutlet weak var rankingHeader: UILabel!
+    @IBOutlet weak var currentRanking: UILabel!
+    
+    @IBOutlet weak var backing3: UIView!
+    @IBOutlet weak var pointsHeader: UILabel!
+    @IBOutlet weak var rankingLabel: UILabel!
+    
+    @IBOutlet weak var returnButton: UIButton!
+    
 }

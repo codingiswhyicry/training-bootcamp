@@ -91,6 +91,13 @@ class green_lantern: UIViewController, UITextFieldDelegate {
     var level4: Array <String> = ["help : brings you to the help menu", "list: lists files on the computer", "delete: deletes files", "share: shares the file", "connect: connects to someone's computer", "show: shows hidden files", "open: opens a file"]
     var level5: Array <String> = ["help : brings you to the help menu", "list: lists files on the computer", "delete: deletes files", "share: shares the file", "connect: connects to someone's computer", "show: shows hidden files", "edit: edits a file", "open: opens a file"]
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let final_scores = segue.destination as? final_score {
+            final_scores.level = ranking
+        }
+    }
+    
     func checkInput(string: String) {
         
         if string == "help" || string == "Help" || string == " Help" || string == "HELP" || string == "help " {
@@ -105,6 +112,7 @@ class green_lantern: UIViewController, UITextFieldDelegate {
         
         let text: String = textField.text!
         var levelOneFiles: Array<String> = ["family.png", "reciepes.txt", "targets.txt", "dogs.png"]
+        
         addString(string: text)
         switch text {
             
@@ -112,7 +120,6 @@ class green_lantern: UIViewController, UITextFieldDelegate {
             for file in levelOneFiles {
                 
                 addString(string: file)
-                
             }
             
             break
