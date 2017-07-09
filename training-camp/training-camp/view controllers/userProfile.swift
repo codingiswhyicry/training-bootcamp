@@ -9,27 +9,53 @@
 import UIKit
 
 class userProfile: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func createGradientLayer(view: UIView) {
+        
+        gradientLayer = CAGradientLayer()
+        gradientLayer.frame = view.bounds
+        
+        gradientLayer.colors = [UIColor.clear.cgColor,  UIColor(red:0.19, green:0.41, blue:0.54, alpha: 0.5).cgColor]
+        
+        view.layer.addSublayer(gradientLayer)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //initial launch screen + scan in
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+     self.view.backgroundColor = UIColor.clear
+        
+     backing.layer.cornerRadius = 3
+     backing.clipsToBounds = true
+     createGradientLayer(view: backing)
+        
+     backing2.layer.cornerRadius = 3
+     backing2.clipsToBounds = true
+     createGradientLayer(view: backing2)
+        
+     backing3.layer.cornerRadius = 3
+     backing3.clipsToBounds = true
+     createGradientLayer(view: backing3)
+        
     }
-    */
+    
+    @IBOutlet weak var backButton: UIButton!
+    
+    var gradientLayer: CAGradientLayer!
 
+    @IBOutlet weak var rankingHeader: UILabel!
+    @IBOutlet weak var rankingLabel: UILabel!
+    
+    @IBOutlet weak var nameHeader: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var achievementHeader: UILabel!
+    @IBOutlet weak var achievementLabel: UILabel!
+    
+    @IBOutlet weak var backing: UIView!
+    @IBOutlet weak var backing2: UIView!
+    @IBOutlet weak var backing3: UIView!
+    
 }

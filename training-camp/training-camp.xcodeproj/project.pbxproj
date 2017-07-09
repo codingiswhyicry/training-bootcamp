@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		0215FD4C1F1169D4007016F7 /* StartScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = StartScene.scn; sourceTree = "<group>"; };
 		025BC9F71F1165AD008234B7 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		025BC9F81F1165B4008234B7 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
@@ -55,11 +56,16 @@
 		02EFDDA21F115AAA00A5A0DE /* training-campUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "training-campUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02EFDDA31F115D8A00A5A0DE /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		02EFDDE11F115E6800A5A0DE /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = ../../../test/test/art.scnassets; sourceTree = "<group>"; };
+=======
+>>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7
 		9CBAE3011F11477B007B9112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBAE3031F11477B007B9112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CBAE3081F11477B007B9112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CBAE30D1F11477B007B9112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		9CBAE32F1F114E24007B9112 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+=======
+>>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7
 		9CBAE32F1F114E24007B9112 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9CBAE3311F114E5C007B9112 /* mainMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMission.swift; sourceTree = "<group>"; };
 		9CBAE3331F114E92007B9112 /* userProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfile.swift; sourceTree = "<group>"; };
@@ -124,10 +130,13 @@
 			isa = PBXGroup;
 			children = (
 				9CBAE3001F11477B007B9112 /* training-camp */,
+<<<<<<< HEAD
 				02EFDDA01F115AAA00A5A0DE /* training-camp.app */,
 				02EFDDA11F115AAA00A5A0DE /* training-campTests.xctest */,
 				02EFDDA21F115AAA00A5A0DE /* training-campUITests.xctest */,
 				025BC9F61F1165AD008234B7 /* Frameworks */,
+=======
+>>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7
 				9CCE18AD1F11665F0081554B /* training-camp.app */,
 				9CCE18AE1F11665F0081554B /* training-campTests.xctest */,
 				9CCE18AF1F11665F0081554B /* training-campUITests.xctest */,
@@ -137,12 +146,15 @@
 		9CBAE3001F11477B007B9112 /* training-camp */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				027588971F11665A008955C6 /* SceneKit.framework */,
 				027588951F116655008955C6 /* ARKit.framework */,
 				9CBAE30D1F11477B007B9112 /* Info.plist */,
 				02EFDDE11F115E6800A5A0DE /* art.scnassets */,
 				9CBAE32F1F114E24007B9112 /* main.storyboard */,
 				0215FD4E1F1169DE007016F7 /* SceneKit Scenes */,
+=======
+>>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7
 				9CBAE30D1F11477B007B9112 /* Info.plist */,
 				9CBAE32F1F114E24007B9112 /* Main.storyboard */,
 				9CBAE3011F11477B007B9112 /* AppDelegate.swift */,
@@ -179,7 +191,11 @@
 		9CBAE3401F114F26007B9112 /* other */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
                 9CC1C8CA1F118C8000B09D5F /* data-latin.ttf */,
+=======
+				9CC1C8CA1F118C8000B09D5F /* data-latin.ttf */,
+>>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7
 				9CC1C8CE1F119C2400B09D5F /* borderView.swift */,
 				9CC1C8C91F118C7F00B09D5F /* data-unifon.ttf */,
 				9CBAE3081F11477B007B9112 /* Assets.xcassets */,
@@ -204,7 +220,10 @@
 			);
 			name = "training-camp";
 			productName = "training-camp";
+<<<<<<< HEAD
 			productReference = 02EFDDA01F115AAA00A5A0DE /* training-camp.app */;
+=======
+>>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7
 			productReference = 9CCE18AD1F11665F0081554B /* training-camp.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -223,7 +242,10 @@
 			);
 			name = "training-campTests";
 			productName = "training-campTests";
+<<<<<<< HEAD
 			productReference = 02EFDDA11F115AAA00A5A0DE /* training-campTests.xctest */;
+=======
+>>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7
 			productReference = 9CCE18AE1F11665F0081554B /* training-campTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -242,7 +264,10 @@
 			);
 			name = "training-campUITests";
 			productName = "training-campUITests";
+<<<<<<< HEAD
 			productReference = 02EFDDA21F115AAA00A5A0DE /* training-campUITests.xctest */;
+=======
+>>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7
 			productReference = 9CCE18AF1F11665F0081554B /* training-campUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -294,8 +319,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				0215FD4D1F1169D4007016F7 /* StartScene.scn in Resources */,
 				9CBAE3301F114E24007B9112 /* main.storyboard in Resources */,
+=======
+>>>>>>> d6cca81685ad9be6d69795cab779670b0defdcd7
 				9CBAE3301F114E24007B9112 /* Main.storyboard in Resources */,
 				9CC1C8CC1F118C8000B09D5F /* data-latin.ttf in Resources */,
 				9CC1C8CB1F118C8000B09D5F /* data-unifon.ttf in Resources */,
