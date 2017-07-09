@@ -12,20 +12,55 @@ class mainMission: UIViewController {
     
     func disable_alert() {
         
-        
-        
-    }
-    
-    func enable_alert() {
-        
-        
+        alertView.alpha = 0.0
+        accept.isUserInteractionEnabled = false
+        alertView.isUserInteractionEnabled = false
+        alertView.isHidden = true
         
     }
     
-    var aquaman = UIImage(named: "Aquaman")
-    var wonder_woman = UIImage(named: "Wonderwoman")
-    var cyborg = UIImage(named: "Cyborg")
-    var superman = UIImage(named: "Superman")
+    func enable_alert(leader: String) {
+        
+        var missionStatement: String
+        
+        switch leader {
+        case "Aquaman":
+            imageView.image = #imageLiteral(resourceName: "Aquaman")
+            missionStatement = "Hey kid, we have a problem down at the water. Let's hit it, before this becomes too big of a problem."
+            missionLeader = "Aquaman"
+            break
+            
+        case "Cyborg":
+            imageView.image = #imageLiteral(resourceName: "Cyborg")
+            missionStatement = "Gotham needs someone well-versed in cybersecurity during times of crisis. I think you're just the person."
+            missionLeader = "Cyborg"
+            break
+            
+        case "Superman":
+            imageView.image = #imageLiteral(resourceName: "Superman")
+            missionStatement = "There's a conflict with a couple people. This is the perfect time to start your diffusion training."
+            missionLeader = "Superman"
+            break
+            
+        case "Wonderwoman":
+            imageView.image = #imageLiteral(resourceName: "Wonderwoman")
+            missionStatement = "A couple of pricks need some training in equality. Are you ready?"
+            missionLeader = "Wonderwoman"
+            break
+            
+        default:
+            missionStatement = "sorry, something went wrong!"
+            break
+        }
+        
+        textMission.text = missionStatement
+        
+        alertView.alpha = 1.0
+        accept.isUserInteractionEnabled = true
+        alertView.isUserInteractionEnabled = true
+        alertView.isHidden = false
+        
+    }
     
     func createGradientLayer(view: UIView) {
         
@@ -40,6 +75,8 @@ class mainMission: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.clear
+        
+        disable_alert()
         
         train.backgroundColor = UIColor.clear
         createGradientLayer(view: backing)
@@ -60,21 +97,25 @@ class mainMission: UIViewController {
         
         print("time to train!")
         
-        let missionLeader: Int = Int(arc4random_uniform(5))
+        let missionLeader: Int = Int(arc4random_uniform(4))
         
         switch missionLeader {
             
-        case 1:
-            break
-        case 2:
-            break
-        case 3:
-            break
-        case 4:
-            break
-        case 5:
+        case 0:
+            enable_alert(leader: "Aquaman")
             break
             
+        case 1:
+            enable_alert(leader: "Cyborg")
+            break
+            
+        case 2:
+            enable_alert(leader: "Superman")
+            break
+            
+        case 3:
+            enable_alert(leader: "Wonderwoman")
+            break
             
         default:
             break
@@ -84,6 +125,7 @@ class mainMission: UIViewController {
     
     var missions: Array<String> = ["Aquaman", "Cyborg", "Superman", "Wonderwoman"]
     
+    var missionLeader: String = ""
     
     @IBOutlet weak var train: UIButton!
     @IBOutlet weak var profile: UIButton!
@@ -101,6 +143,29 @@ class mainMission: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textMission: UITextView!
     @IBOutlet weak var accept: UIButton!
-    
-    
+    @IBAction func acceptAction(_ sender: Any) {
+        
+        switch missionLeader {
+            
+        case "Aquaman":
+            self.performSegue(withIdentifier: "toAquaman", sender: self)
+            break
+            
+        case "Cyborg":
+            self.performSegue(withIdentifier: "toCyborg", sender: self)
+            break
+            
+        case "Superman":
+            self.performSegue(withIdentifier: "toSuperman", sender: self)
+            break
+            
+        case "Wonderwoman":
+            self.performSegue(withIdentifier: "toWonderWoman", sender: self)
+            break
+            
+        default :
+            print("oh no")
+            break
+        }
+    }
 }

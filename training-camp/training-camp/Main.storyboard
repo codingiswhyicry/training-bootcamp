@@ -125,11 +125,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I6d-fF-eV4">
-                                        <rect key="frame" x="0.0" y="0.0" width="283" height="57"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="57"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Message: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9H3-Sx-Hep">
-                                                <rect key="frame" x="8" y="8" width="267" height="41"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New Message " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9H3-Sx-Hep">
+                                                <rect key="frame" x="0.0" y="0.0" width="176" height="57"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -152,6 +152,9 @@
                                         <state key="normal" title="Accept Training">
                                             <color key="titleColor" red="0.19215686269999999" green="0.41176470590000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="acceptAction:" destination="7zo-4a-Mgq" eventType="touchUpInside" id="nqG-cw-Ccz"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q5q-MI-949">
                                         <rect key="frame" x="8" y="65" width="112" height="97"/>
@@ -178,6 +181,10 @@
                         <outlet property="profile" destination="Dmd-0q-QIm" id="CPG-kO-pRm"/>
                         <outlet property="textMission" destination="inE-G4-mOF" id="aG6-dw-Jhi"/>
                         <outlet property="train" destination="Chi-Yi-EWK" id="XFy-9R-Wkg"/>
+                        <segue destination="8fi-hc-BDd" kind="showDetail" identifier="toAquaman" id="XOl-yf-BRE"/>
+                        <segue destination="0Me-cd-sqw" kind="showDetail" identifier="toWonderWoman" id="tQb-nK-qdC"/>
+                        <segue destination="UZM-jZ-ys6" kind="showDetail" identifier="toCyborg" id="0bx-9n-ZGI"/>
+                        <segue destination="cAw-gJ-XNI" kind="show" identifier="toSuperman" id="ySA-4u-9rJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6L2-cg-Cys" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -213,17 +220,30 @@
                     <view key="view" contentMode="scaleToFill" id="h5z-bJ-AQD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pU0-KH-j1k">
+                                <rect key="frame" x="67" y="163" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.19215686269999999" green="0.41176470590000003" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8s-g5-iDQ">
+                                <rect key="frame" x="67" y="345" width="240" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="return home"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2r-9j-H9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2372" y="200"/>
+            <point key="canvasLocation" x="2234.4000000000001" y="-363.86806596701655"/>
         </scene>
-        <!--View Controller-->
+        <!--FirstVC-->
         <scene sceneID="nHn-5I-iSG">
             <objects>
-                <viewController id="ChQ-EI-XF5" sceneMemberID="viewController">
+                <viewController id="ChQ-EI-XF5" customClass="firstVC" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vua-mP-VK7"/>
                         <viewControllerLayoutGuide type="bottom" id="pTi-tu-HX1"/>
@@ -231,17 +251,23 @@
                     <view key="view" contentMode="scaleToFill" id="zeO-qt-d3h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OqZ-ru-Lu4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </sceneKitView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9vp-6J-68Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71" y="-1082"/>
+            <point key="canvasLocation" x="-71.200000000000003" y="-1082.608695652174"/>
         </scene>
-        <!--View Controller-->
+        <!--SecondVC-->
         <scene sceneID="aeH-xq-l6e">
             <objects>
-                <viewController id="QVd-RV-ITL" sceneMemberID="viewController">
+                <viewController id="QVd-RV-ITL" customClass="secondVC" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zgm-YF-NWO"/>
                         <viewControllerLayoutGuide type="bottom" id="y8E-pB-AhW"/>
@@ -452,6 +478,6 @@
         <image name="fingerprint" width="1616" height="2400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ks1-0M-cNb"/>
+        <segue reference="zmM-TY-pq2"/>
     </inferredMetricsTieBreakers>
 </document>
