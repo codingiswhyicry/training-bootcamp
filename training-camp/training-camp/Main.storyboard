@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6Qg-Z6-I6U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UZM-jZ-ys6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -204,6 +204,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="2pP-ej-qWS" kind="show" identifier="toScore" id="Jsa-1X-eAT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xM9-YJ-idi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -238,49 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2r-9j-H9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2234.4000000000001" y="-363.86806596701655"/>
-        </scene>
-        <!--FirstVC-->
-        <scene sceneID="nHn-5I-iSG">
-            <objects>
-                <viewController id="ChQ-EI-XF5" customClass="firstVC" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vua-mP-VK7"/>
-                        <viewControllerLayoutGuide type="bottom" id="pTi-tu-HX1"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zeO-qt-d3h">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OqZ-ru-Lu4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </sceneKitView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9vp-6J-68Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-71.200000000000003" y="-1082.608695652174"/>
-        </scene>
-        <!--SecondVC-->
-        <scene sceneID="aeH-xq-l6e">
-            <objects>
-                <viewController id="QVd-RV-ITL" customClass="secondVC" customModule="training_camp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Zgm-YF-NWO"/>
-                        <viewControllerLayoutGuide type="bottom" id="y8E-pB-AhW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GFV-V7-XsB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0k4-wx-Xv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="668" y="-1083"/>
+            <point key="canvasLocation" x="2857" y="-338"/>
         </scene>
         <!--Aquaman-->
         <scene sceneID="z0s-wC-SsT">
@@ -295,6 +256,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="2pP-ej-qWS" kind="showDetail" identifier="toScore" id="y9C-Ry-x2w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JxM-yL-pMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -435,7 +399,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="type your commands here" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="4Dd-v2-a0O">
                                         <rect key="frame" x="14" y="0.0" width="321" height="53"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <color key="textColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="SourceCodePro-Bold" family="Source Code Pro" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -449,6 +413,7 @@
                         <outlet property="backText" destination="cNo-8j-h9b" id="a3M-Lw-WqY"/>
                         <outlet property="textField" destination="4Dd-v2-a0O" id="99U-RP-k98"/>
                         <outlet property="textView" destination="GoC-6U-SSy" id="FrC-qb-BIU"/>
+                        <segue destination="2pP-ej-qWS" kind="show" identifier="toScore" id="Pq0-6p-iw8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ibz-o7-6fM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -468,6 +433,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="2pP-ej-qWS" kind="show" identifier="toScore" id="mgb-tU-fFU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pYb-1f-NlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -478,6 +446,7 @@
         <image name="fingerprint" width="1616" height="2400"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Pq0-6p-iw8"/>
         <segue reference="zmM-TY-pq2"/>
     </inferredMetricsTieBreakers>
 </document>

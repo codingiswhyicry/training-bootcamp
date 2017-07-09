@@ -21,8 +21,8 @@ class ViewController: UIViewController {
             self.performSegue(withIdentifier: "toMainMission", sender: self)
         })
         
+        
     }
-    
     
     @objc func handleTap() {
         

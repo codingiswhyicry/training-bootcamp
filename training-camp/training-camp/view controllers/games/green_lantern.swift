@@ -10,6 +10,31 @@ import UIKit
 
 class green_lantern: UIViewController, UITextFieldDelegate {
     
+    func levelOne() {
+        
+        
+    }
+    
+    func levelTwo() {
+        
+        
+    }
+    
+    func levelThree() {
+        
+        
+    }
+    
+    func levelFour() {
+        
+        
+    }
+    
+    func levelFive() {
+        
+        
+    }
+    
     func help() {
         
         addString(string: "Here's a list of commands and what they do: ")
@@ -60,41 +85,6 @@ class green_lantern: UIViewController, UITextFieldDelegate {
         
     }
     
-    func list() {
-        
-    }
-    
-    func deleteFile() {
-        
-        
-    }
-    
-    func open() {
-        
-        
-    }
-    
-    
-    func share() {
-        
-        
-    }
-    
-    func connect() {
-        
-        
-    }
-    
-    func show() {
-        
-        
-    }
-    
-    func edit() {
-        
-        
-    }
-    
     var level1: Array <String> = ["help : brings you to the help menu", "list: lists files on the computer", "delete: deletes files", "open: opens a file"]
     var level2: Array <String> = ["help : brings you to the help menu", "list: lists files on the computer", "delete: deletes files", "share: shares the file", "open: opens a file"]
     var level3: Array <String> = ["help : brings you to the help menu", "list: lists files on the computer", "delete: deletes files", "share: shares the file", "connect: connects to someone's computer", "open: opens a file"]
@@ -107,28 +97,40 @@ class green_lantern: UIViewController, UITextFieldDelegate {
             
             help()
             
-        } else if string == "list" || string == "List" || string == "list " || string == "LIST" || string == "list " {
-            
-            list()
-            
-        } else if string == "delete" || string == "Delete" || string == "delete " || string == "DELETE" || string == "delete " {
-            
-            deleteFile()
-            
-        } else {
-            
-            addString(string: "sorry, command not found!")
         }
-        
-        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
         textField.resignFirstResponder()
         
         let text: String = textField.text!
-        
+        var levelOneFiles: Array<String> = ["family.png", "reciepes.txt", "targets.txt", "dogs.png"]
         addString(string: text)
+        switch text {
+            
+        case "list" :
+            for file in levelOneFiles {
+                
+                addString(string: file)
+                
+            }
+            
+            break
+            
+        case "delete":
+            
+            addString(string: "please specify the file!")
+            
+            break
+            
+        case "delete targets.txt":
+            self.performSegue(withIdentifier: "toScore", sender: self)
+            break
+            
+        default:
+            addString(string: "command not found. try again.")
+            break
+        }
         
         checkInput(string: text)
         
@@ -151,26 +153,33 @@ class green_lantern: UIViewController, UITextFieldDelegate {
     
     func runTerminal(level: Int) {
         
+        print("running terminal")
+        
         switch level {
             
         case 1:
             addString(string: "Deadshot has a list of Targets on his computer to hurt in future missions. Headquaters has connected you with his computer. Find the file “targets.txt” and delete it within 2 minutes, or risk being caught!")
+            levelOne()
             break
             
         case 2:
             addString(string: "Batman is on his way to save a citizen, but he can’t remember his exact location! Find and share the coordinates.rtf file with Batman within 3 minutes, or risk being caught!")
+            levelTwo()
             break
             
         case 3:
             addString(string: "the Joker has a file of nuclear code on his computer. Connect to his computer from headquarters, and delete the file “nukes.txt”.")
+            levelThree()
             break
             
         case 4:
             addString(string: "Doctor Poison has finally found the most dangerous chemical compound, and has just sent it to a list of villains within the Gotham area. She has hidden the file of those who she sent to, find the file, send it to Batman, and delete it before she returns to her computer in 5 minutes!")
+            levelFour()
             break
             
         case 5:
             addString(string: "Lex Luthor is hosting a party in Gotham. He sent a list of chemicals to his chefs to be put into the food. Find the file with the head chef’s name, hack into her computer, and replace the names of chemicals with vegetables. ")
+            levelFive()
             break
             
         default:
@@ -187,6 +196,8 @@ class green_lantern: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         //UIColor(red:0.40, green:1.00, blue:0.40, alpha:1.0)
+        
+        print("weeeeeeee")
         
         backText.backgroundColor = UIColor.clear
         backText.layer.borderWidth = 2
