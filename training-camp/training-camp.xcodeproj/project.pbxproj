@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0215FD4D1F1169D4007016F7 /* StartScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = 0215FD4C1F1169D4007016F7 /* StartScene.scn */; };
+		027588961F116656008955C6 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027588951F116655008955C6 /* ARKit.framework */; };
+		027588981F11665A008955C6 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027588971F11665A008955C6 /* SceneKit.framework */; };
+		02EFDDA41F115D8A00A5A0DE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EFDDA31F115D8A00A5A0DE /* StartViewController.swift */; };
 		9CBAE3021F11477B007B9112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE3011F11477B007B9112 /* AppDelegate.swift */; };
 		9CBAE3041F11477B007B9112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBAE3031F11477B007B9112 /* ViewController.swift */; };
 		9CBAE3091F11477B007B9112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CBAE3081F11477B007B9112 /* Assets.xcassets */; };
@@ -41,10 +45,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0215FD4C1F1169D4007016F7 /* StartScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = StartScene.scn; sourceTree = "<group>"; };
+		025BC9F71F1165AD008234B7 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		025BC9F81F1165B4008234B7 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
+		027588951F116655008955C6 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ARKit.framework; sourceTree = "<group>"; };
+		027588971F11665A008955C6 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SceneKit.framework; sourceTree = "<group>"; };
+		02EFDDA01F115AAA00A5A0DE /* training-camp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "training-camp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EFDDA11F115AAA00A5A0DE /* training-campTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "training-campTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EFDDA21F115AAA00A5A0DE /* training-campUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "training-campUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02EFDDA31F115D8A00A5A0DE /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		02EFDDE11F115E6800A5A0DE /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = ../../../test/test/art.scnassets; sourceTree = "<group>"; };
 		9CBAE3011F11477B007B9112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CBAE3031F11477B007B9112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9CBAE3081F11477B007B9112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CBAE30D1F11477B007B9112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CBAE32F1F114E24007B9112 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		9CBAE32F1F114E24007B9112 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9CBAE3311F114E5C007B9112 /* mainMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMission.swift; sourceTree = "<group>"; };
 		9CBAE3331F114E92007B9112 /* userProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userProfile.swift; sourceTree = "<group>"; };
@@ -66,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027588981F11665A008955C6 /* SceneKit.framework in Frameworks */,
+				027588961F116656008955C6 /* ARKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,10 +103,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0215FD4E1F1169DE007016F7 /* SceneKit Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0215FD4C1F1169D4007016F7 /* StartScene.scn */,
+			);
+			name = "SceneKit Scenes";
+			sourceTree = "<group>";
+		};
+		025BC9F61F1165AD008234B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				025BC9F81F1165B4008234B7 /* ARKit.framework */,
+				025BC9F71F1165AD008234B7 /* SceneKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9CBAE2F51F11477A007B9112 = {
 			isa = PBXGroup;
 			children = (
 				9CBAE3001F11477B007B9112 /* training-camp */,
+				02EFDDA01F115AAA00A5A0DE /* training-camp.app */,
+				02EFDDA11F115AAA00A5A0DE /* training-campTests.xctest */,
+				02EFDDA21F115AAA00A5A0DE /* training-campUITests.xctest */,
+				025BC9F61F1165AD008234B7 /* Frameworks */,
 				9CCE18AD1F11665F0081554B /* training-camp.app */,
 				9CCE18AE1F11665F0081554B /* training-campTests.xctest */,
 				9CCE18AF1F11665F0081554B /* training-campUITests.xctest */,
@@ -99,6 +137,12 @@
 		9CBAE3001F11477B007B9112 /* training-camp */ = {
 			isa = PBXGroup;
 			children = (
+				027588971F11665A008955C6 /* SceneKit.framework */,
+				027588951F116655008955C6 /* ARKit.framework */,
+				9CBAE30D1F11477B007B9112 /* Info.plist */,
+				02EFDDE11F115E6800A5A0DE /* art.scnassets */,
+				9CBAE32F1F114E24007B9112 /* main.storyboard */,
+				0215FD4E1F1169DE007016F7 /* SceneKit Scenes */,
 				9CBAE30D1F11477B007B9112 /* Info.plist */,
 				9CBAE32F1F114E24007B9112 /* Main.storyboard */,
 				9CBAE3011F11477B007B9112 /* AppDelegate.swift */,
@@ -122,6 +166,7 @@
 		9CBAE33F1F114F05007B9112 /* view controllers */ = {
 			isa = PBXGroup;
 			children = (
+				02EFDDA31F115D8A00A5A0DE /* StartViewController.swift */,
 				9CBAE3031F11477B007B9112 /* ViewController.swift */,
 				9CBAE3311F114E5C007B9112 /* mainMission.swift */,
 				9CBAE3331F114E92007B9112 /* userProfile.swift */,
@@ -134,7 +179,7 @@
 		9CBAE3401F114F26007B9112 /* other */ = {
 			isa = PBXGroup;
 			children = (
-				9CC1C8CA1F118C8000B09D5F /* data-latin.ttf */,
+                9CC1C8CA1F118C8000B09D5F /* data-latin.ttf */,
 				9CC1C8CE1F119C2400B09D5F /* borderView.swift */,
 				9CC1C8C91F118C7F00B09D5F /* data-unifon.ttf */,
 				9CBAE3081F11477B007B9112 /* Assets.xcassets */,
@@ -159,6 +204,7 @@
 			);
 			name = "training-camp";
 			productName = "training-camp";
+			productReference = 02EFDDA01F115AAA00A5A0DE /* training-camp.app */;
 			productReference = 9CCE18AD1F11665F0081554B /* training-camp.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -177,6 +223,7 @@
 			);
 			name = "training-campTests";
 			productName = "training-campTests";
+			productReference = 02EFDDA11F115AAA00A5A0DE /* training-campTests.xctest */;
 			productReference = 9CCE18AE1F11665F0081554B /* training-campTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -195,6 +242,7 @@
 			);
 			name = "training-campUITests";
 			productName = "training-campUITests";
+			productReference = 02EFDDA21F115AAA00A5A0DE /* training-campUITests.xctest */;
 			productReference = 9CCE18AF1F11665F0081554B /* training-campUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -246,6 +294,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0215FD4D1F1169D4007016F7 /* StartScene.scn in Resources */,
+				9CBAE3301F114E24007B9112 /* main.storyboard in Resources */,
 				9CBAE3301F114E24007B9112 /* Main.storyboard in Resources */,
 				9CC1C8CC1F118C8000B09D5F /* data-latin.ttf in Resources */,
 				9CC1C8CB1F118C8000B09D5F /* data-unifon.ttf in Resources */,
@@ -279,6 +329,7 @@
 				9CBAE3341F114E92007B9112 /* userProfile.swift in Sources */,
 				9CBAE3391F114ED7007B9112 /* wonder_woman.swift in Sources */,
 				9CBAE3041F11477B007B9112 /* ViewController.swift in Sources */,
+				02EFDDA41F115D8A00A5A0DE /* StartViewController.swift in Sources */,
 				9CBAE33D1F114EEB007B9112 /* superman.swift in Sources */,
 				9CBAE3321F114E5C007B9112 /* mainMission.swift in Sources */,
 				9CBAE3371F114ECA007B9112 /* aquaman.swift in Sources */,
@@ -424,8 +475,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2842XZ94V9;
+				DEVELOPMENT_TEAM = 998JC4ZM6R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/training-camp",
+				);
 				INFOPLIST_FILE = "training-camp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ML.training-camp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,8 +494,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2842XZ94V9;
+				DEVELOPMENT_TEAM = 998JC4ZM6R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/training-camp",
+				);
 				INFOPLIST_FILE = "training-camp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ML.training-camp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,6 +514,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 998JC4ZM6R;
 				INFOPLIST_FILE = "training-campTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ML.training-campTests";
@@ -468,6 +530,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 998JC4ZM6R;
 				INFOPLIST_FILE = "training-campTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ML.training-campTests";
